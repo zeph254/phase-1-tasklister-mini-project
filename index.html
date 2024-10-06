@@ -12,13 +12,23 @@
     <form id="create-task-form" action="" method="POST">
       <label for="new-task-description">Task description:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
+      <input type="submit" value="Create New Task" onclick="addTask()">
     </form>
 
     <div id="list">
       <h2>My Todos:</h2>
       <ul id="tasks">
+        
       </ul>
+    </div>
+    <div>
+      <form id="myform">
+        <input id="text"  type="text" placeholder="name">
+        <input id="duration" type="duration"  placeholder="duration">
+        <input id="age" type="age" placeholder="age">
+        <button type="submit">submit</button>
+      </form>
+
     </div>
 
     <script src="./src/index.js"></script>
